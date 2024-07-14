@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Geometry</string>
+    <string name="heading">Geometry</string>
+    <string name="subheading">Area and Volumes</string>
+</resources>
