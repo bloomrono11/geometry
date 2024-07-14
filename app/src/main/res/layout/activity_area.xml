@@ -71,13 +71,17 @@
     />
     <TextView
             android:text="Area Result"
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+
             android:layout_marginTop="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
 
             android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="@color/green"
+            android:textAlignment="center"
 
             android:id="@+id/areaResultTV"
 
@@ -101,9 +105,12 @@
             app:layout_constraintHorizontal_bias="0.5" />
     <TextView
             android:text="@string/formula"
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/areaFormulaTV"
+
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
             android:layout_marginTop="25dp"
 
             android:textSize="24sp"
