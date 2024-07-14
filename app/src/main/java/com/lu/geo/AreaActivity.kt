@@ -32,12 +32,23 @@ class AreaActivity : AppCompatActivity() {
         val edTxt1: EditText = findViewById(R.id.edTxtArea1)
         val edTxt2: EditText = findViewById(R.id.edTxtArea2)
 
+        val formulaTV: TextView = findViewById(R.id.areaFormulaTV)
+
         when (areaSubHead.text) {
-            RECT, TRIANGLE -> {
+            RECT->{
+                formulaTV.text = "Area = l * b where l is length and b is breadth"
                 edTxt2.visibility = View.VISIBLE
             }
-
-            SQUARE, CIRCLE -> {
+            TRIANGLE -> {
+                formulaTV.text = "Area = 0.5*b*h where b is base and h is height"
+                edTxt2.visibility = View.VISIBLE
+            }
+            SQUARE -> {
+                formulaTV.text = "Area = a^2 where a is side"
+                edTxt2.visibility = View.INVISIBLE
+            }
+            CIRCLE -> {
+                formulaTV.text = "Area = π*r^2 where r is radiuus"
                 edTxt2.visibility = View.INVISIBLE
             }
         }

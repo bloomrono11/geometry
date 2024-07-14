@@ -11,6 +11,7 @@ import com.lu.geo.MainActivity.Companion.CONE
 import com.lu.geo.MainActivity.Companion.CUBE
 import com.lu.geo.MainActivity.Companion.PYRAMID
 import com.lu.geo.MainActivity.Companion.SPHERE
+import org.w3c.dom.Text
 import kotlin.math.pow
 
 class VolumeActivity : AppCompatActivity() {
@@ -34,18 +35,28 @@ class VolumeActivity : AppCompatActivity() {
         val edTxt2: EditText = findViewById(R.id.edTxtVolume2)
         val edTxt3: EditText = findViewById(R.id.edTxtVolume3)
 
+        val formulaTV: TextView = findViewById(R.id.volumeFormulaTV)
+
         when (volumeSubHead.text) {
-            CUBE, SPHERE -> {
+            CUBE -> {
+                formulaTV.text = "Volume = a^3 where a is side"
+                edTxt2.visibility = View.INVISIBLE
+                edTxt3.visibility = View.INVISIBLE
+            }
+            SPHERE -> {
+                formulaTV.text = "Volume = (4/3)*π*r^3 where r is radius"
                 edTxt2.visibility = View.INVISIBLE
                 edTxt3.visibility = View.INVISIBLE
             }
 
             CONE -> {
+                formulaTV.text = "Volume = (1/3)*π*(r^2)*h where r is radius and h is height"
                 edTxt3.visibility = View.VISIBLE
                 edTxt2.visibility = View.INVISIBLE
             }
 
             PYRAMID -> {
+                formulaTV.text = "Volume = l*b*h/3 where l is length, b is breadth and h is height"
                 edTxt2.visibility = View.VISIBLE
                 edTxt3.visibility = View.VISIBLE
             }

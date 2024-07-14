@@ -99,5 +99,20 @@
             app:layout_constraintEnd_toEndOf="parent"
 
             app:layout_constraintHorizontal_bias="0.5" />
+    <TextView
+            android:text="@string/formula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/areaFormulaTV"
+            android:layout_marginTop="25dp"
 
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_secondary_variant"
+
+            app:layout_constraintTop_toBottomOf="@+id/areaCalBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.5"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
