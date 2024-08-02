@@ -37,8 +37,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private val primaryOptions = arrayOf(NO_SELECT, AREA, VOLUME)
-    public val areaOptions = arrayOf(NO_SELECT, RECT, CIRCLE, SQUARE, TRIANGLE)
-    public val volumeOptions = arrayOf(NO_SELECT, CUBE,CONE, SPHERE, PYRAMID)
+    val areaOptions = arrayOf(NO_SELECT, RECT, CIRCLE, SQUARE, TRIANGLE)
+    val volumeOptions = arrayOf(NO_SELECT, CUBE,CONE, SPHERE, PYRAMID)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
